@@ -1,0 +1,285 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+/*Trabajaremos los estilos del login*/
+.imagenes-carrusel{
+    opacity: 0.5;
+    filter: alpha(opacity=50);
+    width: 100%;
+    text-align: center;
+}
+.imagenes-carrusel:hover 
+{
+    opacity: 2.0;
+    filter: alpha(opacity=50);
+    cursor: pointer;
+}
+/*Ojo que mis imagnes en pixeles son 1600 x 416*/
+/*Aqui empeizan lso estilos del carrusel*/
+#myCarousel
+{
+    height:60%;
+    width: 100%;
+}
+.carousel-inner
+{
+    line-height: 0px;
+    color: transparent; font-size: 50px;
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: 300;
+    text-transform: uppercase;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+.carousel-inner :hover{
+    line-height: 133px;
+    color: #575858;
+}
+.carousel-inner .imagenes-carrusel{
+    float: left;
+    margin: 0 15px;
+}
+.carousel-indicators li
+{
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    margin: 1px;
+    text-indent: -999px;
+    cursor: pointer;
+    background-color: #000 \9;
+    background-color: rgba(0, 0, 0, 0);
+    border: 1px solid #000;
+    border-radius: 0;
+}
+.carousel-control.left span,
+.carousel-control.right span {
+    background-color: #000;
+}
+/*Trabajaremos los estilos del navbar */
+.icon-bar
+{
+    background: white;
+}
+.navbar-nav
+{
+    background: rgb(141,211,219); 
+    background: -moz-linear-gradient(top, rgba(141,211,219,1) 63%, rgba(76,206,202,1) 76%); 
+    background: -webkit-linear-gradient(top, rgba(141,211,219,1) 63%,rgba(76,206,202,1) 76%); 
+/*    background: linear-gradient(to bottom, rgba(141,211,219,1) 63%,rgba(76,206,202,1) 76%);*/
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#8dd3db', endColorstr='#4cceca',GradientType=0 );
+
+    padding: 1%;
+    text-align: center;
+    width: 100%;
+    margin-top: 0.5%;
+    margin-bottom: 0.5%;
+}
+ul.navbar-nav
+{
+    display: block;
+    float: left;
+}
+.navbar ul{
+    text-align: left;
+}
+.navbar-nav li{
+    font-size: 100%;
+    position: relative;
+    float: left;
+
+}
+.navbar ul li ul{
+    display: none;
+    position: absolute;
+
+    width: 120%;
+
+    list-style-type: none;
+}
+.nav li:hover > ul 
+{
+    display:block;
+    width: 120%;
+}
+nav ul li ul li{
+    width: 100%;
+    border: 1px solid rgb(141,211,219);
+    padding: 1% 1% 1% 1%;
+    border-top: none;
+}
+nav ul li ul 
+{
+    border-top: 1px solid rgb(141,211,219); 
+}
+
+.navbar-nav li  a
+{
+    color: #ffffff;
+    -webkit-transition: outline 5s linear;
+    -moz-transition: outline 5s linear;
+    -ms-transition: outline 5s linear;
+    -o-transition: outline 5s linear;
+    transition: outline 5s linear;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 100%;
+    display:block;
+
+}
+.navbar  ul li a:hover 
+{
+    background: #e0eae6; 
+    color: black;
+    -webkit-transition: outline 5s linear;
+    -moz-transition: outline 5s linear;
+    -ms-transition: outline 5s linear;
+    -o-transition: outline 5s linear;
+    transition: outline 5s linear;
+}
+.sub-menu ul
+{
+    width: 180%;
+}
+.sub-menu ul li a
+{
+    background: #ffffff;
+    padding: 8%;
+    color: black;
+
+}
+.sub-menu ul li a:hover
+{
+    background:rgb(141,211,219);
+    color: #ffffff;
+}
+body
+{
+    background:url('../imgs/fondo.png');
+}
+#div-busqueda
+{
+    margin-left: 4%;  
+}
+#btn-Ingresar
+{
+    margin-left: 10px;
+}
+#caja-usuario
+{
+    background:#e0eae6;
+    width: 70%;
+    margin: 0 auto;
+}
+#caja-password
+{
+    background:#e0eae6;
+    width: 70%;
+    margin: 0 auto;
+}
+#boton_login
+{
+    margin-left: 15%;
+    width: 70%;
+    text-align: center;
+}
+.modal-header
+{
+    background: #449d44;  
+}
+.modal-content
+{
+    width: 60%; 
+    margin: 0 auto;
+}.modal-body
+{
+    padding: 7%;
+}
+#imagen-usuario
+{
+    width: 35%;
+    height: 35%;
+    border-radius: 50%;
+    margin-left: 30%;
+    margin-bottom: 5%;
+}
+/*Efecto para las imaganes  */
+.member-thumb:hover .thumb-overlay {
+    transition: all 0.3s ease-in-out 0s;
+    visibility: visible;
+    opacity: 1;
+}
+
+.member-thumb {
+    position: relative;
+    overflow: hidden;
+}
+
+.member-thumb .thumb-overlay {
+    background-color: rgba(220, 157, 102, 0.8);
+    position: absolute;
+    visibility: hidden;
+    padding-top: 35%;
+    padding-left: 25%;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    right: 0;
+    top: 0;
+}
+.row_team {
+    margin-left:-50px;
+    margin-top:70px;
+}
+
+.row_team li {
+    list-style: none;
+}
+.team-inner {
+    margin-top:10px;
+}
+
+.team-inner-header {
+    font-family: 'Open Sans', sans-serif;
+    font-weight:600;
+    font-size:16px;
+}
+
+.team-inner-subtext {
+    font-weight:normal;
+    font-size:12px;
+}
+
+img {
+border: 5px solid #ccc;
+float: left;
+margin: 15px;
+-webkit-transition: margin 0.5s ease-out;
+-moz-transition: margin 0.5s ease-out;
+-ms-transition: margin 0.5s ease-out;
+transition: margin 0.5s ease-out;
+}
+.Efecto img:hover {
+margin-top: 2px;
+}
+/* Efecto para footer*/
+
+/*.templatemo-footer {
+	border-top: 2px solid #cccccc; 
+	margin-top: 100px;
+}
+
+.footer_container {
+	margin-top:60px; 
+	margin-bottom:20px;
+}
+
+.footer_bottom_content {
+	margin: auto;
+	margin-bottom: 30px;
+	font-size: 14px;
+	color:#333333;
+}*/
